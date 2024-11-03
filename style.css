@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  height: 280px;
+  width: 590px;
+  background-color: #e0e2f8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main {
+  height: 250px;
+  width: 560px;
+  background-color: #fff;
+  border-radius: 10px;
+  background-image: linear-gradient(37deg, rgb(88, 115, 245), rgb(12, 49, 230));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.content {
+  width: 30%;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.send {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="email"] {
+  width: 45%;
+  border-radius: 20px;
+  padding: 10px 15px 10px 15px;
+  border: #ccc solid 1px;
+  border-top: 10px;
+  background: #8ea8ef;
+  color: #fff;
+}
+
+.send-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #5768e8;
+  color: white;
+  cursor: pointer;
+}
+.send {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="email"] input[type="email"]::placeholder {
+  width: 45%;
+  border-radius: 20px;
+  padding: 10px 50px 10px 15px; /* Add padding-right for button space */
+  border: none;
+  background: #8ea8ef;
+  color: #fff;
+  color: #fff;
+}
+
+.send-btn {
+  position: absolute;
+  right: 28%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  color: rgb(94, 86, 86);
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+}
+
+.pics {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+}
+
+.pics li {
+  width: 50px;
+  height: 50px;
+  background-color: #8ea8ef; /* Placeholder color */
+  border-radius: 50%; /* Circular profile pictures */
+  z-index: 1000;
+}
+
+.pics li img {
+  width: 100%; /* Makes the image fill the li container */
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  border-radius: 50px;
+  border: #fff solid 5px;
+}
+
+.send-btn i {
+  font-size: 0.8rem;
+  font-weight: 200px;
+}
+
+.text-lg {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.text-sm {
+  font-size: 0.7rem;
+  font-weight: 100;
+  color: #fff;
+}
